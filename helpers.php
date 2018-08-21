@@ -1,4 +1,10 @@
-<?php if ( ! defined( 'ABSPATH' ) ) die( 'Direct access forbidden.' );
+<?php if ( ! defined( 'ABSPATH' ) ) die ( 'Acesso direto ao arquivo negado.' );
+
 /**
- * Helper functions used all over the theme
+ * Helpers
+ * ----------------------------------------------------------------------
+ * Utilize este arquivo para declarar funções utilizadas pelo tema.
+ *
+ * @author      Fabio Y. Goto <lab@yuiti.com.br>
+ * @since       0.0.1
  */

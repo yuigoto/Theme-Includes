@@ -1,39 +1,41 @@
 # Theme Includes
 
-A way to organize theme files.
+> Tentativa de fazer um fork documentado, em português, do repositório Theme Includes, criado pelo pessoal do ThemeFuse (https://github.com/ThemeFuse/Theme-Includes).
 
-## Directory Structure
+Uma forma de organizar arquivos para o seu tema.
+
+## Estrutura de Pastas
 
 ```text
-theme/
+[seu-tema]/
 └─inc/
-  ├─static.php     # wp_enqueue_style() and wp_enqueue_script()
-  ├─menus.php      # register_nav_menus()
-  ├─hooks.php      # add_filter() and add_action()
-  ├─helpers.php    # Helper functions and classes
-  ├─widgets/       # Theme widgets
-  │ ├─{widget-name}/
-  │ │ ├─class-widget-{widget-name}.php # class Widget_{Widget_Name} extends WP_Widget { ... }
-  │ │ ├─some-file.php
-  │ │ └─some-dir/
+  ├─static.php      # wp_enqueue_style() e wp_enqueue_script()
+  ├─menus.php       # register_nav_menus()
+  ├─hooks.php       # add_filter() e add_action()
+  ├─helpers.php     # Funções de ajuda e outras classes
+  ├─widgets/        # Widgets do tema
+  │ ├─{nome-widget}/
+  │ │ ├─class-widget-{nome-widget}.php # class Widget_{Nome_Widget} extends WP_Widget { ... }
+  │ │ ├─algum-arquivo.php
+  │ │ └─alguma-pasta/
   │ │   └─...
   │ └─...
-  └─includes/      # All .php files are auto included (no need to require_once)
-    ├─some-file.php
+  └─includes/       # Todos os arquivos php são solicitados automaticamente
+    ├─algum-arquivo.php
     └─...
 ```
 
-## File Descriptions
+## Descrição dos Arquivos
 
-* `helpers.php`, `hooks.php`, `includes/*.php` are included right away
-* `static.php` is included on [`wp_enqueue_scripts`](http://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts) action
-* `widgets/{hello-world}/class-widget-{Hello_World}.php` are included on `widgets_init` action
+* `helpers.php`, `hooks.php`, `includes/*.php` são incluídos logo de cara
+* `static.php` é incluso pela action [`wp_enqueue_scripts`](http://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts)
+* `widgets/{hello-world}/class-widget-{Hello_World}.php` são incluídos na action `widgets_init`
 
-## Install
+## Instalação
 
-1. [Download](https://github.com/ThemeFuse/Theme-Includes/releases/latest) the archive
-* Extract it to your theme root directory
-* Include the `init.php` file from your theme `functions.php`
+1. [Faça o Download](https://github.com/yuigoto/Theme-Includes/releases/latest) do arquivo
+2. Extraia o conteúdo para a raíz do seu tema
+3. Incluia o arquivo `init.php` no `functions.php` do seu tema
 
 	```php
 	include_once get_template_directory() .'/inc/init.php';

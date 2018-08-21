@@ -1,1 +1,1 @@
-All `*.php` files from this directory will be included automatically in alphabetical order
+Todos os arquivos `*.php` neste diretório serão inclusos automaticamente, em ordem alfabética.

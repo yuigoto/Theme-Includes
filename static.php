@@ -1,4 +1,11 @@
-<?php if ( ! defined( 'ABSPATH' ) ) die( 'Direct access forbidden.' );
+<?php if ( ! defined( 'ABSPATH' ) ) die ( 'Acesso direto ao arquivo negado.' );
+
 /**
- * Enqueue all theme scripts and styles
+ * Static
+ * ----------------------------------------------------------------------
+ * Utilize este arquivo para solicitar todos os scripts e folhas de estilo
+ * usadas no tema.
+ *
+ * @author      Fabio Y. Goto <lab@yuiti.com.br>
+ * @since       0.0.1
  */
