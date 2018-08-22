@@ -309,7 +309,7 @@ class Theme_Includes {
                      * No caso, o widget já foi incluso e não há necessidade de
                      * fazê-lo novamente.
                      */
-                    continue();
+                    continue;
                 } else {
                     $included_widgets[ $dirname ] = true;
                 }
