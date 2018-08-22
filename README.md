@@ -33,7 +33,7 @@ Uma forma de organizar arquivos para o seu tema.
 
 ## Instalação
 
-1. [Faça o Download](https://github.com/yuigoto/Theme-Includes/releases/latest) do arquivo
+1. [Faça o Download](https://github.com/yuigoto/Theme-Includes/archive/master.zip) do arquivo
 2. Extraia o conteúdo para a raíz do seu tema
 3. Incluia o arquivo `init.php` no `functions.php` do seu tema
 
